@@ -1,3 +1,0 @@
-require('rollup-plugin-commonjs').call(
-  this,
-  {include: 'external/npm/node_modules/**', namedExports: {'react': ['Children', 'Component', 'PropTypes', 'createElement'], 'react-dom': ['render']}})

@@ -167,9 +167,9 @@ const config = {
   },
   external: [
     'react',
+    'react-dom',
   ],
   plugins: [TMPL_additional_plugins].concat([
-    require('rollup-plugin-babel').call(this, {presets: [require('@babel/preset-react')]}),
     {resolveId: resolveBazel},
     nodeResolve(
         {jsnext: true, module: true, customResolveOptions: {moduleDirectory: nodeModulesRoot}}),
