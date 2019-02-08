@@ -50,6 +50,10 @@ custom_rollup_bundle = rule(
             cfg = "host",
             default = Label("//src:rollup"),
         ),
+        "_rollup_config_tmpl": attr.label(
+            default = Label("//src:rollup.config.js"),
+            allow_single_file = True,
+        ),
     }),
     outputs = ROLLUP_OUTPUTS,
 )

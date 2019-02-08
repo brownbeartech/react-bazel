@@ -50,6 +50,6 @@ custom_rollup_bundle(
         #"require('rollup-plugin-babel').call(this, {plugins: [require('@babel/plugin-transform-react-jsx')]})",
         #"require('rollup-plugin-commonjs').call(this, {include: 'external/npm/node_modules/**', namedExports: {'react': ['Children', 'Component', 'PropTypes', 'createElement'], 'react-dom': ['render']}})",
         #"require('rollup-plugin-commonjs').call()",
-        "require('@babel/core').transform('code', {presets: [require('@babel/preset-react')]})",
+        #"require('rollup-plugin-babel').call(this, {presets: [require('@babel/preset-react')]})",
     ],
 )
